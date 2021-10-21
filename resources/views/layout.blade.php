@@ -21,7 +21,9 @@
     </nav>
 
     <section class="py-4">
+        <div class="mx-auto w-192">
         @yield('contents')
+        </div>
     </section>
 
     <footer class="text-center bg-gray-600 text-gray-300">

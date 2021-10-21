@@ -10,26 +10,27 @@
 @endphp
 
 @section('contents')
-    <h2 class="text-center">{{ $formTitle }}</h2>
+    <h2 class="text-center font-bold">{{ $formTitle }}</h2>
 
     <form method="post" action="{{ $formUrl }}">
         @method($formMethod)
         @csrf
 
         <div>
-            <label>Title</label>
-            <input type="text" name="title" value="{{ old('title', $post->title) }}" />
+            <label class="block font-light">Title</label>
+            <input type="text" name="title" value="{{ old('title', $post->title) }}" class="border p-2" />
         </div>
 
         <div>
-            <label>Description</label>
+            <label class="block font-light">Description</label>
             <textarea
                 name="description"
+                class="border p-2"
             >{{ old('description', $post->description) }}</textarea>
         </div>
 
         <div>
-            <button type="submit">Save</button>
+            <button type="submit" class="bg-blue-600 text-white py-1 px-4 rounded">Save</button>
         </div>
     </form>
 @endsection

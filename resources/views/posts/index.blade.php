@@ -1,13 +1,13 @@
 @extends('layout')
 
 @section('contents')
-    <h2 class="text-center">List Post</h2>
+    <h2 class="text-center font-bold">List Post</h2>
 
     <p>Total: {{ $posts->total() }}</p>
 
     <p>Showing: {{ count($posts->items()) }}</p>
 
-    <table>
+    <table class="w-full mt-4 border border-solid">
         <thead>
             <tr>
                 <th class="border">Title</th>
@@ -18,6 +18,8 @@
         <tbody>
             @foreach ($posts as $post)
             <tr>
+                <td class="border">{{ $post->title }}</td>
+                <td class="border">{{ $post->description }}</td>
                 <td class="border">
                     <a href="/posts/{{ $post->id }}/edit">Edit</a>
                     <form method="post" action="/posts/{{ $post->id }}">
