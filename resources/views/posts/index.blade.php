@@ -21,11 +21,11 @@
                 <td class="border">{{ $post->title }}</td>
                 <td class="border">{{ $post->description }}</td>
                 <td class="border">
-                    <a href="/posts/{{ $post->id }}/edit">Edit</a>
+                    <a class="text-blue-500 hover:underline" href="/posts/{{ $post->id }}/edit">Edit</a>
                     <form method="post" action="/posts/{{ $post->id }}">
                         @method('delete')
                         @csrf
-                        <button type="submit">Delete</button>
+                        <button type="submit" class="text-blue-500 hover:underline">Delete</button>
                     </form>
                 </td>
             </tr>
