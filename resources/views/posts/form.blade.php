@@ -18,14 +18,14 @@
 
         <div>
             <label>Title</label>
-            <input type="text" name="title" value="{{ old('title') ?? $post->title }}" />
+            <input type="text" name="title" value="{{ old('title', $post->title) }}" />
         </div>
 
         <div>
             <label>Description</label>
             <textarea
                 name="description"
-            >{{ old('description') ?? $post->description }}</textarea>
+            >{{ old('description', $post->description) }}</textarea>
         </div>
 
         <div>

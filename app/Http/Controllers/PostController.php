@@ -42,12 +42,48 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        $data = request()->validate([
+        $data = $request->validate([
             'title' => ['required'],
             'description' => ['required'],
         ]);
 
         Post::create($data);
+
+        return redirect()->back();
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  Post  $post
+     * @return \Illuminate\Http\Response
+     */
+    public function edit(Post $post)
+    {
+        return view('posts.form', [
+            'formMode' => 'edit',
+            'formMethod' => 'put',
+            'formUrl' => '/posts/' . $post->id,
+            'post' => $post,
+        ]);
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $post
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, Post $post)
+    {
+        $data = $request->validate([
+            'title' => ['required'],
+            'description' => ['required'],
+        ]);
+
+        $post->fill($data);
+        $post->save();
 
         return redirect()->back();
     }
