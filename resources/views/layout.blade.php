@@ -15,7 +15,8 @@
 
     <nav class="text-center pt-2">
         <ul>
-            <li><a href="/posts">Posts</a></li>
+            <li><a href="/posts">List Post</a></li>
+            <li><a href="/posts/create">Create Post</a></li>
         </ul>
     </nav>
 

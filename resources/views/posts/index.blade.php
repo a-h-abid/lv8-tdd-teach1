@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('contents')
-    <h2 class="text-center">Post List</h2>
+    <h2 class="text-center">List Post</h2>
 
     <p>Total: {{ $posts->total() }}</p>
 
