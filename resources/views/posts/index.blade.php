@@ -10,15 +10,22 @@
     <table>
         <thead>
             <tr>
-                <th>Title</th>
-                <th>Description</th>
+                <th class="border">Title</th>
+                <th class="border">Description</th>
+                <th class="border"></th>
             </tr>
         </thead>
         <tbody>
             @foreach ($posts as $post)
             <tr>
-                <td>{{ $post->title }}</td>
-                <td>{{ $post->description }}</td>
+                <td class="border">
+                    <a href="/posts/{{ $post->id }}/edit">Edit</a>
+                    <form method="post" action="/posts/{{ $post->id }}">
+                        @method('delete')
+                        @csrf
+                        <button type="submit">Delete</button>
+                    </form>
+                </td>
             </tr>
             @endforeach
         </tbody>
