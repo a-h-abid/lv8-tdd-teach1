@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MyTweetController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,3 +23,5 @@ Route::post('/posts', [PostController::class, 'store']);
 Route::get('/posts/{post}/edit', [PostController::class, 'edit']);
 Route::put('/posts/{post}', [PostController::class, 'update']);
 Route::delete('/posts/{post}', [PostController::class, 'destroy']);
+
+Route::get('/my-tweets', [MyTweetController::class, 'index']);

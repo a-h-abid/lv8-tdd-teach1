@@ -30,4 +30,17 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'tweet' => [
+        'http-client-options' => [
+            'base_uri' => env('TWEET_BASE_URI', 'https://tweets.com/api'),
+            'timeout' => 30.0,
+            'headers' => [
+                'Accept' => 'application/json',
+                'Content-type' => 'application/json',
+                'Cache-control' => 'no-cache',
+            ],
+            'proxy' => env('TWEET_HTTP_CLIENT_PROXY', false),
+        ],
+    ],
+
 ];
