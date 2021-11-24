@@ -11,7 +11,7 @@ use GuzzleHttp\Psr7\Response;
 use Symfony\Component\HttpFoundation\Response as SymfonyResponse;
 use PHPUnit\Framework\TestCase;
 
-class TweetServiceTests extends TestCase
+class TweetServiceTest extends TestCase
 {
     public function testItCanListMyTweets()
     {
