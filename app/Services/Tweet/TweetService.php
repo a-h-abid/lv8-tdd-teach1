@@ -2,7 +2,6 @@
 
 namespace App\Services\Tweet;
 
-use App\Services\GpApigwServiceInterface;
 use GuzzleHttp\Client;
 
 class TweetService implements TweetServiceInterface
@@ -14,7 +13,6 @@ class TweetService implements TweetServiceInterface
      * Constructor
      *
      * @param Client $client
-     * @param GpApigwServiceInterface $apigw
      */
     public function __construct(Client $client)
     {
