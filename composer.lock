@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d4842c22e789d247c4b660e69490545f",
+    "content-hash": "643b6e5100d04d499bcfab700fb9900a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6515,23 +6515,23 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "9.2.7",
+            "version": "9.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "d4c798ed8d51506800b441f7a13ecb0f76f12218"
+                "reference": "f301eb1453c9e7a1bc912ee8b0ea9db22c60223b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/d4c798ed8d51506800b441f7a13ecb0f76f12218",
-                "reference": "d4c798ed8d51506800b441f7a13ecb0f76f12218",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/f301eb1453c9e7a1bc912ee8b0ea9db22c60223b",
+                "reference": "f301eb1453c9e7a1bc912ee8b0ea9db22c60223b",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "ext-libxml": "*",
                 "ext-xmlwriter": "*",
-                "nikic/php-parser": "^4.12.0",
+                "nikic/php-parser": "^4.13.0",
                 "php": ">=7.3",
                 "phpunit/php-file-iterator": "^3.0.3",
                 "phpunit/php-text-template": "^2.0.2",
@@ -6580,7 +6580,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.7"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.9"
             },
             "funding": [
                 {
@@ -6588,7 +6588,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-09-17T05:39:03+00:00"
+            "time": "2021-11-19T15:21:02+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
